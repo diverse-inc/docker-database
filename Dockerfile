@@ -7,4 +7,4 @@ RUN set -ex \
     && dpkg -i $RIDGEPOLE_VERSION.deb \
     && rm -rf $RIDGEPOLE_VERSION.deb \
     && /opt/ridgepole/embedded/bin/gem install mysql2 \
-    && apt-get purge -y --auto-remove ca-certificates wget build-essential libmysqlclient-dev
+    && apt-get purge -y --auto-remove ca-certificates wget build-essential
